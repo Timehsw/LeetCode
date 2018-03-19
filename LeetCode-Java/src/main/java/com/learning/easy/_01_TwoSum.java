@@ -1,5 +1,8 @@
 package com.learning.easy;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by hushiwei on 2018/3/19.
  * desc :
@@ -18,10 +21,55 @@ package com.learning.easy;
  */
 public class _01_TwoSum {
 
+    /**
+     * Approach #1 (Brute Force)
+     * The brute force approach is simple. Loop through each element x and
+     * find if there is another value that equals to target - x.
+     * @param nums
+     * @param target
+     * @return
+     */
     public int[] twoSum(int[] nums, int target) {
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[j] == target - nums[i]) {
+                    return new int[] { i, j };
+                }
+            }
+        }
+        throw new IllegalArgumentException("No two sum solution");
+    }
 
-        // TODO: 2018/3/19
-        return null;
+    /**
+     * Approach #2 (Two-pass Hash Table)
+     * @param nums
+     * @param target
+     * @return
+     */
+    public int[] twoSumApproach2(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            map.put(nums[i], i);
+        }
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (map.containsKey(complement) && map.get(complement) != i) {
+                return new int[] { i, map.get(complement) };
+            }
+        }
+        throw new IllegalArgumentException("No two sum solution");
+    }
+
+    public static void main(String[] args) {
+
+        int[] arr = {2, 7, 11, 15};
+
+        int[] resArr = new _01_TwoSum().twoSumApproach2(arr, 13);
+        for (int i : resArr) {
+            System.out.println(i);
+        }
+
+
     }
 }
 
