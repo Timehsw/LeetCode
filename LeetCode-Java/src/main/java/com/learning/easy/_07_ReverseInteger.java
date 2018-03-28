@@ -32,7 +32,6 @@ public class _07_ReverseInteger {
 
         while (x != 0) {
             int tail      = x % 10;
-            System.out.println(tail);
             int newResult = result * 10 + tail;
             if ((newResult - tail) / 10 != result) {
                 return 0;
