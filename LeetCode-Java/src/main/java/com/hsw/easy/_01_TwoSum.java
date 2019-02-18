@@ -1,4 +1,4 @@
-package com.learning.easy;
+package com.hsw.easy;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.learning.easy;
+package com.hsw.easy;
 
 /**
  * Created by hushiwei on 2018/4/4.
