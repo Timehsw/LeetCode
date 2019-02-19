@@ -6,7 +6,15 @@ LeetCode solutions with Java and Python3
 
 ## 说明
 
-以学习掌握为目的
+先刷前200道题里面的easy
+按分类进行刷题
+
+```
+tag/
+    easy/
+    medium/
+    hard/
+```
 
 代码 + 思路
 

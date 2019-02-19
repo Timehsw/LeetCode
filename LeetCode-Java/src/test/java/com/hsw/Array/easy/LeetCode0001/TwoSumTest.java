@@ -1,4 +1,4 @@
-package com.hsw.easy.LeetCode0001;
+package com.hsw.Array.easy.LeetCode0001;
 
 import org.junit.Assert;
 import org.junit.Test;

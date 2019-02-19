@@ -1,4 +1,4 @@
-package com.hsw.easy;
+package com.hsw.Array.easy;
 
 /**
  * Created by hushiwei on 2018/3/21.

@@ -1,4 +1,4 @@
-package com.hsw.easy;
+package com.hsw.Array.easy;
 
 import java.util.HashMap;
 import java.util.Map;

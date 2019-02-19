@@ -1,4 +1,4 @@
-package com.hsw.easy.LeetCode0001;
+package com.hsw.Array.easy.LeetCode0001;
 
 import java.util.HashMap;
 import java.util.Map;

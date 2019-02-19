@@ -1,4 +1,4 @@
-package com.hsw.hard;
+package com.hsw.Array.hard;
 
 /**
  * Created by hushiwei on 2018/3/19.
