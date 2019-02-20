@@ -16,9 +16,4 @@ public class RemoveDuplicatesFromSortedArray {
         }
         return i + 1;
     }
-
-    public static void main(String[] args) {
-        int i = new RemoveDuplicatesFromSortedArray().removeDuplicates(new int[]{1, 1, 1, 1, 1, 2});
-        System.out.println(i);
-    }
 }

@@ -11,6 +11,6 @@ public class RemoveDuplicatesFromSortedArrayTest {
     @Test
     public void testRemoveDuplicates() {
         RemoveDuplicatesFromSortedArray t = new RemoveDuplicatesFromSortedArray();
-        Assert.assertEquals(2, t.removeDuplicates(new int[]{1, 1, 2}));
+        Assert.assertEquals(2, t.removeDuplicates(new int[]{1, 1, 2, 2, 3, 3}));
     }
 }
