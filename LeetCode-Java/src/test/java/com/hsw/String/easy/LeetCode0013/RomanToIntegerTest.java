@@ -16,5 +16,11 @@ public class RomanToIntegerTest {
         Assert.assertEquals(9, t.romanToInt2("IX"));
         Assert.assertEquals(58, t.romanToInt2("LVIII"));
         Assert.assertEquals(1994, t.romanToInt2("MCMXCIV"));
+
+        Assert.assertEquals(3, t.romanToInt3("III"));
+        Assert.assertEquals(4, t.romanToInt3("IV"));
+        Assert.assertEquals(9, t.romanToInt3("IX"));
+        Assert.assertEquals(58, t.romanToInt3("LVIII"));
+        Assert.assertEquals(1994, t.romanToInt3("MCMXCIV"));
     }
 }

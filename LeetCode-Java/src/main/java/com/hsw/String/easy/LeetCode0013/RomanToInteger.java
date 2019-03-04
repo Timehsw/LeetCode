@@ -1,5 +1,7 @@
 package com.hsw.String.easy.LeetCode0013;
 
+import java.util.HashMap;
+
 /**
  * Created by hushiwei on 2019-03-02.
  * desc : 罗马数字转整数
@@ -47,7 +49,7 @@ public class RomanToInteger {
                     cur = 10;
                     break;
                 case 'V':
-                    cur=5;
+                    cur = 5;
                     break;
                 case 'I':
                     cur = 1;
@@ -59,6 +61,29 @@ public class RomanToInteger {
                 result += cur;
             }
             pre = cur;
+        }
+        return result;
+    }
+
+    public int romanToInt3(String s) {
+        if (s == null || s.length() == 0) return 0;
+        HashMap<Character, Integer> m = new HashMap<>();
+        m.put('I', 1);
+        m.put('V', 5);
+        m.put('X', 10);
+        m.put('L', 50);
+        m.put('C', 100);
+        m.put('D', 500);
+        m.put('M', 1000);
+
+        int length = s.length();
+        Integer result = m.get(s.charAt(length - 1));
+        for (int i = length - 2; i >= 0; i--) {
+            if (m.get(s.charAt(i + 1)) <= m.get(s.charAt(i))) {
+                result += m.get(s.charAt(i));
+            } else {
+                result -= m.get(s.charAt(i));
+            }
         }
         return result;
     }
