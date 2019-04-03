@@ -1,6 +1,5 @@
-package com.hsw.BFS.LeetCode101;
+package com.hsw.BFS.easy.LeetCode0101;
 
-import com.hsw.BFS.LeetCode0101.SymmetricTree;
 import com.hsw.DataStructures.Helper;
 import com.hsw.DataStructures.TreeNode;
 import org.junit.Assert;

@@ -1,4 +1,4 @@
-package com.hsw.BFS.LeetCode0101;
+package com.hsw.BFS.easy.LeetCode0101;
 
 import com.hsw.DataStructures.TreeNode;
 
