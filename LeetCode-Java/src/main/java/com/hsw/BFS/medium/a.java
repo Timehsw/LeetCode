@@ -1,4 +1,4 @@
-package com.hsw.BFS;
+package com.hsw.BFS.medium;
 
 /**
  * Created by hushiwei on 2019-04-03.
